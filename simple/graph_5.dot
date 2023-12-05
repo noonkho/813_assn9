@@ -1,0 +1,14 @@
+digraph {
+  0 [label="---", shape=doublecircle];
+  2 [label="add_oneof num0 num1 num2 num3 num2", shape=box];
+  1 [label="done num2"];
+  3 [label="substract_one num3 num2 num2"];
+  4 [label="multiple_oneof num1 num2 num3 num2"];
+  2 -> 4;
+  2 -> 1;
+  2 -> 3;
+  1 -> 0;
+  3 -> 1;
+  4 -> 1;
+  4 -> 3;
+}

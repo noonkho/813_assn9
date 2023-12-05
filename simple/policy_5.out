@@ -1,0 +1,117 @@
+{
+
+  "init": "2",
+  "goal": "0",
+  "nodes" : {
+    "0": {
+      "expected_successor": false,
+      "action": "---",
+      "state": "0x20d2ba0",
+      "distance": 0,
+      "is_relevant": 1,
+      "is_goal": 1,
+      "is_sc": 1,
+      "successors": [
+
+       ]
+    },
+    "2": {
+      "expected_successor": "1",
+      "action": "add_oneof num0 num1 num2 num3 num2",
+      "state": "0x20d86e0",
+      "distance": 2,
+      "is_relevant": 0,
+      "is_goal": 0,
+      "is_sc": 1,
+      "successors": [
+        {
+            "outcome_label": "add_oneof_DETDUP_1 num0 num1 num2 num3 num2",
+            "successor_id": "4"
+        },
+        {
+            "outcome_label": "add_oneof_DETDUP_2 num0 num1 num2 num3 num2",
+            "successor_id": "1"
+        },
+        {
+            "outcome_label": "add_oneof_DETDUP_3 num0 num1 num2 num3 num2",
+            "successor_id": "3"
+        }
+       ]
+    },
+    "1": {
+      "expected_successor": "0",
+      "action": "done num2",
+      "state": "0x20d9250",
+      "distance": 1,
+      "is_relevant": 0,
+      "is_goal": 0,
+      "is_sc": 1,
+      "successors": [
+        {
+            "outcome_label": "done num2",
+            "successor_id": "0"
+        }
+       ]
+    },
+    "3": {
+      "expected_successor": "1",
+      "action": "substract_one num3 num2 num2",
+      "state": "0x20db5d0",
+      "distance": 2,
+      "is_relevant": 0,
+      "is_goal": 0,
+      "is_sc": 1,
+      "successors": [
+        {
+            "outcome_label": "substract_one num3 num2 num2",
+            "successor_id": "1"
+        }
+       ]
+    },
+    "4": {
+      "expected_successor": "1",
+      "action": "multiple_oneof num1 num2 num3 num2",
+      "state": "0x20dbcd0",
+      "distance": 2,
+      "is_relevant": 0,
+      "is_goal": 0,
+      "is_sc": 1,
+      "successors": [
+        {
+            "outcome_label": "multiple_oneof_DETDUP_1 num1 num2 num3 num2",
+            "successor_id": "1"
+        },
+        {
+            "outcome_label": "multiple_oneof_DETDUP_2 num1 num2 num3 num2",
+            "successor_id": "3"
+        }
+       ]
+    }
+  },
+  "edges" : [
+      ["2", ">", "4"],
+      ["2", ">", "1"],
+      ["2", ">", "3"],
+      ["1", ">", "0"],
+      ["3", ">", "1"],
+      ["4", ">", "1"],
+      ["4", ">", "3"]
+  ],
+  "states" : {
+    "0x20d2ba0": [
+      "Atom done()"
+    ],
+    "0x20d86e0": [
+      "Atom current_num(num0)"
+    ],
+    "0x20d9250": [
+      "Atom current_num(num2)"
+    ],
+    "0x20db5d0": [
+      "Atom current_num(num3)"
+    ],
+    "0x20dbcd0": [
+      "Atom current_num(num1)"
+    ]
+   }
+}
