@@ -1,6 +1,8 @@
 # 813_assn9
 This is for Queen's University CISC 813 Course Assignment 9
 
+This is on the topic of Non-deterministic where Assignment 3 I did Pset and Assignmnet 9 is the modelling
+
 # Team members
 - E Ching (Noon) Kho, 17eck3@queensu.ca
 
