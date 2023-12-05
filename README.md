@@ -93,19 +93,19 @@ I think it is too complex for the planner to solve (remote) and therefore I simp
 # Results
 In the ./problem.pddl file line 48, I adjust the value of counter which limits the number of times subtract action can be executed.
 
-Here's the result (the count value is tested randomly):
+Here's the result (the count value is tested to see when will the states starting to can't reach the goal state):
 ## Substract count = 10
-[count_10](images/g_10.png)
+![count_10](images/g_10.png)
 ## Substract count = 7
-[count_7](images/g_7.png)
+![count_7](images/g_7.png)
 ## Substract count = 6
-[count_6](images/g_6.png)
+![count_6](images/g_6.png)
 ## Substract count = 5
-[count_5](images/g_5.png)
+![count_5](images/g_5.png)
 ## Substract count = 3
-[count_3](images/g_3.png)
+![count_3](images/g_3.png)
 ## Substract count = 1
-[count_1](images/g_1.png)
+![count_1](images/g_1.png)
 
 ## Observations from the images/graphs
 When count = 10, it is guarantee to reach the goal state no matter how.
