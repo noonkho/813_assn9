@@ -116,3 +116,5 @@ The total cost really makes the planner try to run multiply action first and the
 
 # Others
 Predicates are generated using setup.py
+
+For the done action, I tried to use the forall syntax but since there are a lot of parameters for the add/mul/sub actions and the planner can't really work with the syntax.
